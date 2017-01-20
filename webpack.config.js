@@ -12,6 +12,7 @@ module.exports = {
     },
 
     devServer: {
+        hot : true,
         inline: true,
         host : '127.0.0.1',
         port: 4000,
@@ -32,7 +33,7 @@ module.exports = {
         ]
     },
 
-    /*plugins : [
-        new webpack.HotModuleReplacementPlugin();
-    ]*/
+    plugins : [
+        new webpack.HotModuleReplacementPlugin()
+    ]
 };
